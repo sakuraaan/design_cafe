@@ -1,0 +1,378 @@
+@charset "utf-8";
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    background-color: #e9d9c0;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 4.4%;
+    padding-right: 4.4%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header_nav ul {
+    display: flex;
+    gap: 48px;
+}
+.header_nav a {
+    color: #ffffff;
+    font-family: "Alatsi", sans-serif;
+}
+
+.logo {
+    width: 434px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 50px;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  background: #C6C6C6;
+  border-radius: 50%;
+  display: block;
+}
+
+.dots .active {
+  background: #363636;
+}
+
+#concept {
+    margin-top: 72px;
+    max-width: 887px;
+    margin: 72px auto 0;
+    text-align: center;
+}
+
+.concept-subtitle {
+    font-size: 26px;
+    font-family: "Alatsi", sans-serif;
+    letter-spacing: 0.05em;
+}
+
+.concept-title {
+    margin-top: 40px;
+    font-size: 64px;
+    line-height: 1.5;
+}
+
+.concept-text {
+    margin-top: 16px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+/* 共通部分 */
+.section-inner {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    margin: 144px auto 0;
+}
+
+.title {
+    font-family: "Diplomata SC", serif;
+    font-size: 40px;
+    color: #D20202;
+}
+
+.inner {
+    margin-top: 32px;
+}
+
+.center {
+    text-align: center;
+}
+/* 共通部分終わり */
+
+
+#aboutus {
+    height: 478px;
+    display: flex;
+    gap: 4%;
+}
+
+.about-img-wrap {
+    width: 44%;
+    height: 100%;
+
+    overflow: hidden;
+    border-radius: 0 0 64px 0;
+}
+
+
+.about-img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+.aboutus-text {
+    margin-bottom: 124px;
+    width: 52%;
+}
+
+.aboutus-subtitle {
+    margin-top: 40px;
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.aboutus-description {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.2%;
+}
+
+.menu-card {
+    width: 31.2%;
+}
+
+.menu-img {
+    border-radius: 0 64px 0 0;
+}
+
+.menu-name {
+    font-family: "Diplomata SC", serif;
+    color: #D20202;
+    margin-top: -13px;
+    font-size: 26px;
+}
+
+.menu-description {
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.gallery-list {
+    display: flex;
+    width: 100vw;
+}
+
+.gallery-item {
+    width: 20%;
+}
+
+#event .inner {
+    background-color: #ffffff;
+    border: 1px solid #4F270B;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-list {
+    margin: 32px 185px 32px 185px;
+}
+
+.event-item {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.event-item:last-child {
+    margin-bottom: 0;
+}
+
+.event-date {
+    font-weight: 500;
+    margin-right: 40px;
+}
+
+#access .inner iframe {
+    width: 100vw;
+    height: 353px;
+    filter: grayscale(100%) invert(92%) contrast(83%);
+}
+
+#footer {
+    background-color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.footer-inner {
+    display: flex;
+    max-width: 1000px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+.footer-logo {
+    font-size: 28px;
+    font-family: "Diplomata SC", serif;
+    margin-right: 39px;
+}
+
+.footer-row {
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.footer-label {
+    width: 64px;
+    margin-right: 40px;
+    line-height: 1.5;
+}
+
+.footer-text {
+    line-height: 1.5;
+}
+
+
+
+.copyright {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 80px;
+}
+
+.page_top {
+    width: 140px;
+    height: 140px;
+    background-color: #D20202;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: #fff;
+
+    z-index: 99999;
+}
+
+.arrow {
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    margin-bottom: 9px;
+}
+
+.page {
+    font-size:26px;
+    letter-spacing: 0.05em;
+    font-family: "Alatsi", sans-serif;
+}
+.top {
+    font-size:40px;
+    letter-spacing: 0.05em;
+    font-family: "Alatsi", sans-serif;
+}
+
+
+.hamburger,
+.header_nav-sp {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .hamburger{
+        display: block;
+        width: 54px;
+        height: 54px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 99999;
+    }
+    .header_nav {
+        display: none;
+    }
+    .hamburger span {
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 8px;
+        top: 26px;
+        transition: 0.3s;
+    }
+    .hamburger::before{
+        content: "";
+        width: 40px;
+        height: 2px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 8px;
+        top: 13px;
+        transition: 0.3s;
+    }
+    .hamburger::after{
+        content: "";
+        width: 40px;
+        height: 2px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 8px;
+        bottom: 13px;
+        transition: 0.3s;
+    }
+
+    /* openがついた時の動き */
+    .open span {
+        background-color: transparent;
+    }
+    .open::before {
+        transform: rotate(45deg);
+        top: 28px;
+    }
+    .open::after {
+        transform: rotate(-45deg);
+        bottom: 24px;
+    }
+    .header_nav-sp {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #000000a1;
+    }
+    .header_nav-sp a {
+        color: #fff;
+        font-size: 36px;
+        font-family: "Alatsi", sans-serif;
+    }
+    .header_nav-sp ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+    }
+
+}
