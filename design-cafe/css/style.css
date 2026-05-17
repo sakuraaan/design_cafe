@@ -28,6 +28,7 @@ body {
 
 .logo {
     width: 434px;
+    max-width: 70%;
 }
 
 .dots {
@@ -168,6 +169,7 @@ body {
 .gallery-list {
     display: flex;
     width: 100vw;
+    margin-left: calc(50% - 50vw);
 }
 
 .gallery-item {
@@ -186,7 +188,6 @@ body {
     align-items: center;
     justify-content: center;
     max-width: 1000px;
-    margin: 0 auto;
 }
 
 .event-list {
@@ -209,6 +210,7 @@ body {
 
 #access .inner iframe {
     width: 100vw;
+    margin-left: calc(50% - 50vw);
     height: 353px;
     filter: grayscale(100%) invert(92%) contrast(83%);
 }
@@ -382,5 +384,144 @@ body {
         justify-content: center;
         gap: 48px;
     }
+    .concept-title {
+        font-size: 60px;
+    }
+    .aboutus-subtitle {
+        font-size: 28px;
+    }
+}
+
+.sp-br {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .concept-subtitle {
+        font-size: 16px;
+        letter-spacing: 0em;
+    }
+    .concept-title {
+        font-size: 31px;
+    }
+    .concept-text {
+        font-size: 16px;
+        line-height: 2.0;
+        margin-top: 24px;
+    }
+    .sp-br {
+        display: block;
+    }
+
+    /* 共通部分 */ 
+    .section-inner {
+    margin: 80px auto 0;
+    max-width: 390px;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+    }
+    .title {
+    font-size: 32px;
+    text-align: center;
+    }
+    /* 共通部分終わり */
+
+    #aboutus {
+        flex-direction: column;
+        height: auto;
+    }
+    .aboutus-subtitle {
+        margin-top: 32px;
+        font-size: 24px;
+    }
+    .aboutus-text {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .aboutus-description {
+        line-height: 2;
+    }
+    .about-img-wrap {
+    width: 100%;
+    aspect-ratio: 350 / 227;
+    border-radius: 0;
+    }
+    
+    .menu-list {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .menu-card {
+    width: 100%;
+    }
+    .menu-img {
+        aspect-ratio: 350 / 243;
+    }
+
+    #event .inner {
+        font-size: 16px;
+        display: block;
+    }
+    .event-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .event-item {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 32px;
+        max-width: 311px;
+    }
+    .event-description {
+        line-height: 1.3;
+        margin-top: 8px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #access .inner iframe {
+        height: 240px;
+    }
+
+    #footer {
+        padding-bottom: 80px;
+    }
+    .footer-inner {
+        flex-direction: column;
+        max-width: 390px;
+        padding: 0 20px;
+        width: 100%;
+    }
+    .footer-logo {
+        font-size: 24px;
+        margin: 0;
+    }
+    .footer-info {
+        margin-top: 39px;
+    }
+    .footer-row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+    .footer-label {
+    margin: 0;
+    line-height: 1.0;
+    }
+    .footer-text {
+    line-height: 1.0;
+    }
+
+    .copyright {
+        line-height: 1.0;
+        max-width: 390px;
+        padding: 0 20px;
+        margin-top: 248px;
+    }
+
 
 }
